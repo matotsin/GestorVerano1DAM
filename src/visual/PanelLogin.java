@@ -23,7 +23,7 @@ public class PanelLogin extends JPanel{
         });
 
         volver.addActionListener(e-> {
-            cl.show(contenedor, "perfiles");
+            cl.show(contenedor, "Perfiles");
         });
 
     }

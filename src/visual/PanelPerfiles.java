@@ -6,6 +6,7 @@ public class PanelPerfiles extends JPanel{
         public PanelPerfiles(CardLayout cl, JPanel contenedor)
         {
              JPanel p1 = new JPanel();
+             p1.setLayout(new BorderLayout());
         add(new JLabel("Selecciona tu perfil", SwingConstants.CENTER));
         add(p1, BorderLayout.NORTH); // el título arriba
 
@@ -30,12 +31,13 @@ public class PanelPerfiles extends JPanel{
         
         }
 
-        add(perfiles);
+        
         JScrollPane scroll = new JScrollPane(perfiles); // perfiles VA DENTRO del scroll
         scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 
-        add(scroll, BorderLayout.CENTER); // el scroll al centro, no perfiles
-        
+         // el scroll al centro, no perfiles
+        add(perfiles);
+        add(scroll);
         
         //fin test
 
@@ -45,6 +47,12 @@ public class PanelPerfiles extends JPanel{
         añadir.setHorizontalAlignment(SwingConstants.CENTER);
         p2.add(añadir);
         add(p2, BorderLayout.SOUTH);
-        }
-
+        
+        añadir.addActionListener(l->{
+            cl.show(contenedor, "LOGIN");
+        });
+    
     }
+
+    
+}
