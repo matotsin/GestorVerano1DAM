@@ -2,7 +2,7 @@
 import java.awt.*;
 import javax.swing.*;
 
-public class Perfiles {
+public class Principal {
    
     static JFrame jf = new JFrame("Gestor de cuentas");
    
