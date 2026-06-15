@@ -6,7 +6,6 @@ public class PanelCrearCuenta extends JPanel {
 
     public PanelCrearCuenta(CardLayout cl, JPanel contenedor) {
 
-        JPanel PanelCrearCuenta = new JPanel();
         setLayout(new GridLayout(3,2));
 
         //Usuario
@@ -24,11 +23,11 @@ public class PanelCrearCuenta extends JPanel {
 
         JButton volver = new JButton("Volver");
         add(volver);
-        JButton crear = new JButton("Crear Cuenta");
+        JButton crear = new JButton("Crear Cuenta"); // n Botón
         add(crear);
 
         volver.addActionListener(l->{
-            cl.show(contenedor, "Crear cuenta");
+            cl.show(contenedor, "Perfiles");
         });
     }
 }

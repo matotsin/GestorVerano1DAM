@@ -19,7 +19,7 @@ public class PanelLogin extends JPanel{
 
         login.addActionListener(l-> {
 
-            cl.show(contenedor, "principal");
+            cl.show(contenedor, "");
         });
 
         volver.addActionListener(e-> {

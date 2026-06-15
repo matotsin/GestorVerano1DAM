@@ -1,7 +1,10 @@
 import java.awt.*;
 import javax.swing.*;
 
+
 public class PanelPerfiles extends JPanel{
+
+
 
         public PanelPerfiles(CardLayout cl, JPanel contenedor)
         {
@@ -22,8 +25,14 @@ public class PanelPerfiles extends JPanel{
             
             
             JLabel test = new JLabel(nombre);
-            JButton acceso = new JButton("Acceder");
             
+            JButton acceso = new JButton("Acceder");
+
+            acceso.addActionListener(l->{
+
+            cl.show(contenedor, "LOGIN");
+            
+            });
             fila.add(test);
             fila.add(acceso);
             perfiles.add(fila);
@@ -49,8 +58,10 @@ public class PanelPerfiles extends JPanel{
         add(p2, BorderLayout.SOUTH);
         
         añadir.addActionListener(l->{
-            cl.show(contenedor, "LOGIN");
+            cl.show(contenedor, "Crear Cuenta");
         });
+
+        
     
     }
 
