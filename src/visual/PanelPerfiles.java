@@ -18,7 +18,11 @@ public class PanelPerfiles extends JPanel{
         JPanel perfiles = new JPanel();
         perfiles.setLayout(new BoxLayout(perfiles, BoxLayout.Y_AXIS));
 
-        String[] usuarios = {"Juli", "Marco"};
+        String[] usuarios = {"Ana García", "Carlos López", "María Martínez", "Roberto Sánchez", 
+        "Laura Pérez", "David González", "Sofía Rodríguez", "Miguel Fernández", 
+        "Elena Jiménez", "Pablo Ruiz", "Isabel Moreno", "Antonio Díaz",
+        "Carmen Álvarez", "Francisco Romero", "Teresa Navarro", "Juan Molina"};
+
         for (String nombre : usuarios) {
             
             JPanel fila = new JPanel(new GridLayout(1,2));
@@ -45,7 +49,7 @@ public class PanelPerfiles extends JPanel{
         scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 
          // el scroll al centro, no perfiles
-        add(perfiles);
+        
         add(scroll);
         
         //fin test

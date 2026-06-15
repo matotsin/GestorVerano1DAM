@@ -21,6 +21,7 @@ public class Principal {
         contenedor.add(new PanelPerfiles(cl, contenedor), "Perfiles");
         contenedor.add(new PanelLogin(cl, contenedor), "LOGIN");
         contenedor.add(new PanelCrearCuenta(cl, contenedor), "Crear Cuenta");
+        contenedor.add(new Gestor(cl, contenedor), "Gestor");
         cl.show(contenedor, "Perfiles");
         jf.add(contenedor);
 
